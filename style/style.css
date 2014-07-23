@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'LiberationSerif Regular';
+    src: url('../take-note/fonts/LiberationSerif-Regular.ttf');
+}
+header {
+    background: #588c7e;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 1px;
+}
+input {
+    -webkit-appearance: none;
+    -webkit-border-radius:0;
+    border-radius: 0;
+    clear: left;
+    width: 238px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    outline: 0;
+}
+input:focus {
+    border: 1px solid #588c7e;
+}
+body {
+    background: #fff;
+    font-family: 'LiberationSerif Regular',serif;
+    margin: 0;
+}
+
+.error_msg {color: #588c7e;text-transform: uppercase;font-size: 12px;text-align: center;margin-top: 10px;}
+.lost-password {
+    width: 270px;
+    margin: auto;
+}
+.lost-password a {
+    color: #588c7e;
+    text-decoration: none;
+}
+#form-holder {
+    padding: 5px;
+    width: 300px;
+    margin: auto;
+}
+#form-holder h1 {
+    color: #fff;
+    text-align: center;
+}
+#form-holder form {
+    background: #fff;
+    padding: 15px;
+}
+#login {
+    width: 360px;
+    margin: 5px auto;
+    height: 50px;
+    padding-top: 5px;
+}
+#login a.button {
+    background: #659D32;
+    padding: 20px 157px 20px 158px;
+    position: relative;
+    top: 13px;
+    margin: auto;
+    color: #fff;
+    text-decoration: none;
+    font: 13px/15px Helvetica, sans-serif;
+    text-transform: uppercase;
+
+}
+#login a.button:hover {
+    opacity: 1;
+}
+input.button {
+    background: #fff;
+    padding: 20px 0px 20px 0px;
+    position: relative;
+    margin: auto;
+    color: #588c7e;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    width: 270px;
+    margin-top: 1px;
+    border: 2px solid #588c7e;
+    font-family: 'LiberationSerif Regular';
+    font-size: 20px;
+}
+.register-hold {
+    width: 100px;
+    position: relative;
+    top: -20px;
+    left: -96px;
+    margin: auto;
+}
+.register-hold a {
+    text-decoration: none;
+    text-align: center;
+    background: #fff;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 15px;
+    color: #588c7e;
+}
+@media only screen and (max-width: 480px) {
+    #main.register, #main.login {margin: 0 auto;}
+    
+}

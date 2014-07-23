@@ -1,0 +1,312 @@
+@font-face {
+    font-family: 'LiberationSerif Regular';
+    src: url('fonts/LiberationSerif-Regular.ttf');
+}
+
+@media only screen and (min-width: 0px){
+	body {
+		background: #eee;
+		margin: 0;
+		font-family:'LiberationSerif Regular', serif;
+		font-size: 15px;
+	}
+	header {
+		background: #588c7e;
+		color: #fff;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		min-width: 290px;
+	}
+	header .container {
+		width: 70%;
+		float: left;
+		padding: 5px;
+	}
+	header .container a {
+		text-decoration: none;
+		color: #fff;
+	}
+	header .container h1 {
+		font-weight: 700;
+		max-width: 200px;
+		float: left;
+	}
+	header .container .icon {
+		float: left;
+		background: url('images/Clipboard.png')no-repeat;
+		background-size: 30px;
+		width: 30px;
+		height: 30px;
+		margin-top: 20px;
+		margin-left: 15px;
+	}
+	header .new {
+		margin-top: 5px;
+		text-align: right;
+	}
+	header .new a {
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+	header .new a img {
+		width: 53px;
+		margin-right: 5px;
+		margin-top: 8px;
+	}
+	#main {
+		position: relative;
+		top: 90px;
+	}
+	#main h2 {
+		text-align: center;
+		font-weight: normal;
+		width: 80%;
+		margin: 20px auto;
+	}
+	#main.new-note {
+		width: 100%;
+		margin: auto;
+		overflow: hidden;
+	}
+	/* Notes */
+	#main .note .inner .note-wrap {
+		min-width: 70%;
+		float: left;
+	}
+	#main .wrapper .note {
+		background: #fff;
+		border-left: 5px solid #588c7e;
+		margin-bottom: 5px;
+		padding: 10px;	
+		min-width: 275px;
+	}
+	#main .wrapper .note .inner:hover {
+		opacity: 0.8;
+		-webkit-transition: 0.25s all ease;
+		cursor: pointer;
+	}
+	#main .wrapper .note .inner:hover .arrow-right {
+		opacity: 1;
+	} 
+	#main .wrapper .note .title {
+		text-transform: capitalize;
+		font-size: 17px;
+		font-weight: bold;
+	}
+	#main .wrapper .note .date {
+		font-size: 15px;
+		font-style: italic;
+	}
+	.note-count {
+		text-align: center;
+		margin-top: -7px;
+	}
+	.note .inner {
+		height: 38px;
+		width: 95%;
+	}
+	.note .inner .arrow-right.grey {
+		width: 0;
+		height: 0;
+		border-top: 20px solid transparent;
+		border-bottom: 20px solid transparent;
+		border-left: 15px solid #555;
+		float: right;
+		margin-top: -4px;
+		margin-left: -15px;
+		-webkit-transition: 0.2s all ease;
+		-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+	}
+	.note .inner .arrow-right.white {
+		width: 0;
+		height: 0;
+		border-top: 20px solid transparent;
+		border-bottom: 20px solid transparent;
+		border-left: 15px solid #fff;
+		float: right;
+		margin-top: -5px;
+		-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-webkit-transition: 0.2s all ease;
+	}
+	/* Note content */
+	.note.active {
+		overflow: hidden;
+	}
+	.note .outer {
+		clear: left;
+		display: none;
+	}
+	.note.active .inner .arrow-right {
+		-webkit-transform: rotate(270deg);
+		transform: rotate(270deg);
+		-ms-transform: rotate(270deg);
+		-moz-transform: rotate(270deg);
+		-webkit-transition: 0.2s all ease;
+	}
+	.note.active .inner .arrow-right.grey {
+		margin-top: -6px;
+		margin-left: -15px;
+	}
+	.note.active .inner .arrow-right.white {
+		margin-top: -5px;
+	}
+	.control-buttons {
+		float: right;
+		width: 70px;
+	}
+	.control-buttons input[type="submit"] {
+		padding: 5px;
+		margin-right: 5px;
+		cursor: pointer;
+		border: 1px solid transparent;
+		width: 60px;
+		height: 30px;
+		float: left;
+	}
+	.control-buttons input[type="submit"].edit-note {
+		background: #588c7e;
+		color: #fff;
+	}
+
+	.control-buttons input[type="submit"].delete-note {
+		background: #588c7e;
+		color: #fff;
+	}
+
+	/* Create note */
+	input#title {
+		width: 100%;
+		-webkit-appearance: none;
+		background: #fff;
+		padding-left: 12px;
+		border: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		height: 30px;
+		text-transform: capitalize;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+	}
+	textarea#note {
+		width: 100%;
+		height: 180px;
+		-webkit-appearance: none;
+		background: #fff;
+		padding: 5px;
+		border: 0;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		margin-top: 5px;
+	}
+	textarea#note, input#title {
+		font-family: 'LiberationSerif Regular', serif;
+		font-size: 16px;
+	}
+	textarea#note:focus, input#title:focus {
+		outline: 0;
+		/*box-shadow: inset 0px 1px 3px #999;*/
+	}
+	input[type="submit"] {
+		width: 100%;
+		margin-bottom: 50px;
+		margin-top: 0px;
+		-webkit-appearance: none;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		background: #fff;
+		border: none;
+		cursor: pointer;
+		height: 70px;
+		border: 2px solid #588c7e;
+		float: right;
+		margin-right: 0px;
+		font-family: 'LiberationSerif Regular', serif;
+		text-transform: uppercase;
+	}
+	input[type="submit"]:focus {
+		outline: 0;
+	}
+	#main.new-note form input[type="submit"] {font-size: 19px;}
+	p.error_msg {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 11px;
+	}
+	/* Footer */
+	#footer {
+		background: #588c7e;
+		width: 100%;
+		position: relative;
+		top: 90px;
+		padding-top: 1px;
+		padding-bottom: 1px;
+	}
+	#footer #user-management {
+		padding: 0;
+		text-align: center;
+		min-width: 235px;
+	}
+	#footer #user-management li {
+		list-style-type: none;
+		display: inline;
+		margin-right: 5px;
+		color: #fff;
+	}
+	#footer #user-management li a {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #fff;
+		font-family: Helvetica;
+		font-size: 12px;
+	}
+	#footer #user-management li a:hover {
+		text-decoration: underline;
+	}
+	#user-info {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	#user-info h2 {text-align: center;}
+	#user-info .userInfo {
+		padding: 22px 15px 20px;
+		border-left: 5px solid #588c7e;
+		margin-top: 5px;
+		background: #fff;
+	}
+	#user-info .userInfo span.label {
+		float: right;
+		text-transform: uppercase;
+		color: #588c7e;
+		font-size: 12px;
+	}
+	#main .section {
+		background: #fff;
+		padding: 10px;
+		margin: 10px;
+		border-radius: 2px;
+		border-left: 5px solid #588c7e;
+	}
+	#main .section h3 {
+		text-transform: uppercase;
+		font-size: 13px;
+		color: #588c7e;
+	}
+
+	
+}
+@media only screen and (min-width: 660px) {
+	
+}
+@media only screen and (min-width: 1680px) {
+	
+}
